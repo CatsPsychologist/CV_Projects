@@ -78,7 +78,7 @@ select {
   }
 }
 header li a {
-  font-size: 10pt;
+  font-size: 0.8rem;
   padding: 10px 25px !important;
 }
 header li a:hover {
@@ -162,9 +162,6 @@ body {
   font-weight: 100;
 }
 
-.services {
-  padding-top: 150px;
-}
 .services .services-wrapper h2 {
   font-weight: 800;
   color: #394b50;
@@ -192,26 +189,30 @@ body {
   background-image: url("../images/about-us.png");
   background-size: 50% 100%;
   background-repeat: no-repeat;
-  margin-top: 150px;
+  margin-top: 40px;
 }
-.about-us .article {
-  padding: 150px 0 170px 85px;
+.about-us .article .article-wrapper {
+  padding: 20% 0 25% 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.about-us .article h3 {
+.about-us .article .article-wrapper h3 {
   color: white;
   font-weight: 800;
   font-size: 25pt;
 }
-.about-us .article p {
+.about-us .article .article-wrapper p {
   color: white;
   padding: 30px 0;
   font-size: 10pt;
   line-height: 25px;
 }
-.about-us .article .btn {
+.about-us .article .article-wrapper .btn {
   border: #e7ad48 solid 2px;
   color: white;
-  padding: 10px 30px;
+  padding: 10px 0;
+  width: 40%;
 }
 
 .price {
@@ -390,7 +391,6 @@ body {
   background-repeat: no-repeat;
   padding: 13px 40px;
   background-position: 15px;
-  margin: 0 15px;
 }
 .news-letter .news-letter-wrapper .news-letter-input .btn {
   height: 100%;
@@ -446,6 +446,104 @@ body {
   position: absolute;
   right: 40%;
   bottom: -25%;
+  width: 17%;
+}
+.news-letter .news-letter-wrapper .news-letter-map img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    background-image: none;
+  }
+  .about-us .left-part {
+    display: none;
+  }
+  .about-us .article {
+    width: 100%;
+  }
+  .about-us .article .article-wrapper {
+    text-align: center;
+    align-items: center;
+    padding: 20% 0 25%;
+  }
+
+  .how-it-works {
+    padding: 100px 0;
+  }
+  .how-it-works .arrow-down {
+    display: none;
+  }
+  .how-it-works .arrow-up {
+    display: none;
+  }
+  .how-it-works .item {
+    margin-bottom: 40px;
+  }
+  .how-it-works .item img {
+    padding-bottom: 10px;
+  }
+  .how-it-works .btn-wrapper {
+    padding-top: 15px;
+  }
+
+  .happy-clients .happy-clients-wrapper {
+    padding: 80px 0;
+  }
+
+  .news-letter {
+    margin-top: 70px;
+  }
+  .news-letter .news-letter-wrapper .btn {
+    margin-top: 20px;
+    width: 100% !important;
+  }
+  .news-letter .news-letter-wrapper input[type=text] {
+    margin-bottom: 20px;
+  }
+  .news-letter .news-letter-wrapper .news-letter-map .info {
+    border-radius: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    transform: none;
+    left: 0%;
+    width: 100%;
+    height: 50vh;
+  }
+  .news-letter .news-letter-wrapper .news-letter-map .info .info-wrapper {
+    justify-content: space-around;
+  }
+  .news-letter .news-letter-wrapper .news-letter-map .info .pointer {
+    display: none;
+  }
+  .news-letter .news-letter-wrapper .news-letter-map img {
+    display: none;
+  }
+  .news-letter .news-letter-wrapper .news-letter-map .line {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .banner-wrapper {
+    padding-bottom: 100px;
+  }
+  .banner-wrapper .custom-class {
+    display: none;
+  }
+
+  .price {
+    padding-bottom: 100px;
+  }
+  .price .cards {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .article-wrapper img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
